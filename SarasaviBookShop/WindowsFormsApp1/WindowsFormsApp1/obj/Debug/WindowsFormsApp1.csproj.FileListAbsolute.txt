@@ -8,3 +8,13 @@ D:\Project\Book Inquiry\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsForms
 D:\Project\Book Inquiry\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 D:\Project\Book Inquiry\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\Project\Book Inquiry\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\DELL\Documents\Sarasavi-Library-System-develop\SarasaviBookShop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\Sarasavi-Library-System-develop\SarasaviBookShop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\SarasaviLibrarySystem.FormInquiry.resources
+C:\Users\DELL\Documents\Sarasavi-Library-System-develop\SarasaviBookShop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\DELL\Documents\Sarasavi-Library-System-develop\SarasaviBookShop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\DELL\Documents\Sarasavi-Library-System-develop\SarasaviBookShop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Sarasavi-Library-System-develop\SarasaviBookShop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\DELL\Documents\Sarasavi-Library-System-develop\SarasaviBookShop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\DELL\Documents\Sarasavi-Library-System-develop\SarasaviBookShop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\DELL\Documents\Sarasavi-Library-System-develop\SarasaviBookShop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\DELL\Documents\Sarasavi-Library-System-develop\SarasaviBookShop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
