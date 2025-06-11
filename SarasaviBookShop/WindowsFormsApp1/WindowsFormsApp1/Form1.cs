@@ -7,8 +7,6 @@ namespace SarasaviLibrarySystem
 {
     public partial class FormInquiry : Form
     {
-        private string connectionString = @"Server=.\SQLEXPRESS;Database=LibraryDB;Trusted_Connection=True;";
-
         public FormInquiry()
         {
             InitializeComponent();
@@ -24,29 +22,41 @@ namespace SarasaviLibrarySystem
                 return;
             }
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                string query = @"
-                    SELECT 
-                        B.Title,
-                        B.Author,
-                        C.CopyID,
-                        CASE WHEN C.IsReference = 1 THEN 'Yes' ELSE 'No' END AS ReferenceCopy,
-                        CASE WHEN C.IsBorrowed = 1 THEN 'Yes' ELSE 'No' END AS Borrowed,
-                        CASE WHEN C.IsReserved = 1 THEN 'Yes' ELSE 'No' END AS Reserved
-                    FROM Books B
-                    INNER JOIN Copies C ON B.BookID = C.BookID
-                    WHERE B.Title LIKE @search OR B.Author LIKE @search";
+                string connectionString = @"Data Source = (localdb)\ProjectModels;Initial Catalog = Sarasavi; Integrated Security = True;";
+                string qry = "select * from Books where Title = @keyword";
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    cmd.Parameters.AddWithValue("@search", "%" + keyword + "%");
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    SqlCommand cmnd = new SqlCommand(qry, conn);
+                    cmnd.Parameters.AddWithValue("@keyword", keyword);
+
+                    conn.Open();
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmnd);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
                     dgvResults.DataSource = dt;
+                    conn.Close();
+
+                    //SqlDataReader rdr = cmnd.ExecuteReader();
+                    //while (rdr.Read())
+                    //{
+                    //    title = rdr[1].ToString();
+                    //    author = rdr[2].ToString();
+                    //    publisher = rdr[3].ToString();
+                    //    isbn = rdr[4].ToString();
+
+                    //    MessageBox.Show("Title : " +title+ ", Author" + author + ", Publisher" + publisher + ", Isbn" + isbn);
+
+                    //}
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
         }
     }
 }
